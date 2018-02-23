@@ -1,0 +1,31 @@
+pwd
+cd creating own directory
+git config --global user.name "anandzy"
+git config --global user.email "anandbhupathiraju@icloud.com"
+git init
+git clone githubrepourl
+Create a sample file using editing tools like vim/touch/=====> cat
+git add filename
+git status(Here we will get to know staged r unstaged files 
+i.e..tracked r untracked files.tracked will bein red color&untrackedfiles is in greencolour)
+git commit -m "commited"
+git remote add origin url
+git push -u origin master
+refresh and check in github how many repos r created.
+
+iff err : git remote add origin <"clone">
+-----------------------------------------------------------------------------------------------
+NOTE:ORIGIN is nothing but gitrepository or main repository
+----------------------------------------------------------------------------------------------
+About log
+git log -4
+see we have only 2 files that is file and file1 so if ur going beyound it shows only 2files
+git log -2 r -1
+-----------------------------------------------------------------------------------------
+there are 3 stages in virgit remote tulazation 
+they are
+workspace 
+staged area
+repo
+-------------------------------------------------------------------------------------------------
+ 

@@ -43,8 +43,8 @@ sudo echo export HISTCONTROL=ignorespace >> .bashrc
 sudo echo clear >> .bashrc
 
 #These below lines are alias keys for the convinience and fast work.
-sudo echo alias c='clear' >> .bashrc
-sudo echo alias e='exit' >> .bashrc
+sudo echo "alias c='clear'" >> .bashrc
+sudo echo "alias e='exit'" >> .bashrc
 
 
 #The Script needs to be run by Sudoers ~Home Directory to avail the softlinkssssss

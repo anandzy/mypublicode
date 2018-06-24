@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#This script creates the very needfll shortcuts for newly created instance on CentOS family.
+#The Script needs to be run by Sudoers ~Home Directory to avail the softlinkssssss
+
+#These are the softlinks which we use often.
+
+	ln -s /etc/sysconfig/network-script/ifcfg-eth0
+	ln -s /etc/passwd
+	ln -s /etc/hosts
+  
+  #The below line will insert the default file for vim editor which can give serial numbers to the lines.
+  rm .vimrc; touch .vimrc; echo se nu >> .vimrc
+  
+  
+  
+  

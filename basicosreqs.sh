@@ -26,14 +26,6 @@ sudo python get-pip.py.1
 sudo pip install awscli
 sudo yum install -y ntp
 sleep 1
-#The below lines will install git and enable access to git
-sudo yum -y install git
-sudo yum -y groupinstall "Development Tools"
-sudo yum -y install gettext-devel openssl-devel perl-CPAN perl-devel zlib-devel
-sudo git config --global user.name "Anand Bhupathiraju"
-sudo git config --global user.email "anandbhupathiraju@icloud.com"
-sudo git config --list
-sudo git --version
 
 #The below lines will make enable  permissions to the basic usage of needed directories
 sudo chmod o+t /tmp; chmod o+t /tmp/*
@@ -62,3 +54,7 @@ useradd anand
 #The below lines will make the services restart which are installed by the script!
 service httpd restart
 
+
+exit 0
+
+sudo echo The bootstrap script and configuration script running perfectly!

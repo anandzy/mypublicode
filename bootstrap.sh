@@ -9,7 +9,7 @@ sudo git config --global user.name "Anand Bhupathiraju"
 sudo git config --global user.email "anandbhupathiraju@icloud.com"
 #sudo git config --list
 #sudo git --version
-mkdir git && cd git
+sudo mkdir git && cd git
 sudo git init
 sudo git clone https://github.com/anandzy/mypublicode
 sudo chmod 777 /home/ec2-user/git/mypublicode/*

@@ -55,6 +55,10 @@ sudo ln -s /etc/hosts
 #The below line will insert the default file for vim editor which can give serial numbers to the lines.
 sudo rm .vimrc; touch .vimrc; echo se nu >> .vimrc
 
+
+#The below code will create the user 
+useradd anand
+
 #The Below lines Configure the git to get start with cloned files.
 mkdir git && cd git
 git config --global user.name "anandzy"

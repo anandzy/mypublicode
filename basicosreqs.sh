@@ -6,7 +6,7 @@
 sudo yum install -y epel-release python-devel
 sudo yum -y update
 sleep 1
-sudo yum install -y wget elinks httpd vim ntp zip unzip git ansible GeoIP GeoIP-data
+sudo yum install -y wget elinks httpd vim ntp zip unzip git GeoIP-data 
 sleep 1
 	
 # The below lines will change Host names and changes the host entries

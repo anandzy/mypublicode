@@ -6,18 +6,18 @@
 sudo yum install -y epel-release python-devel
 sudo yum -y update
 sleep 1
-sudo yum install -y wget elinks httpd vim ntp zip unzip git GeoIP-data 
+sudo yum install -y wget elinks httpd vim ntp zip unzip git GeoIP-data
 sleep 1
-	
+
 # The below lines will change Host names and changes the host entries
 
 sudo hostnamectl status
-sudo hostnamectl set-hostname machine.me	## static 
+sudo hostnamectl set-hostname machine.me	## static
 sudo hostnamectl set-hostname "Mostly AMZ"   ## pretty
 #sudo echo 192.168.33.11 webserver >> /etc/hosts
 #sudo echo 192.168.33.22 dbserver >> /etc/hosts
 #sudo echo 192.168.33.33 appserver >> /etc/hosts
-sudo service systemd-hostnamed restart    
+sudo service systemd-hostnamed restart
 sudo hostname
 
 #The below lines will install the AWSCLI Required packages.
@@ -43,12 +43,12 @@ sudo echo "alias e='exit'" >> .bashrc
 sudo ln -s /etc/sysconfig/network-script/ifcfg-eth0
 sudo ln -s /etc/passwd
 sudo ln -s /etc/hosts
-  
+
 #The below line will insert the default file for vim editor which can give serial numbers to the lines.
 sudo rm .vimrc; touch .vimrc; echo se nu >> .vimrc
 
 
-#The below code will create the user 
+#The below code will create the user
 useradd anand
 
 #The below lines will make the services restart which are installed by the script!

@@ -23,9 +23,6 @@ def main():
 	for line in file_set:
 		cleandata.write(line)
 
-#The Below Code will say the orgin city and xountry of ips.
-	os.system("cat ips.txt | xargs -I% curl http://ipinfo.io/%/city | http://ipinfo.io/%/country >> city.json")
-	os.system("cat ips.txt | xargs -I% curl http://ipinfo.io/%/country >> country.json")
 
 #Expected 4 Output files rawipslist.txt, ips.txt, city.json
 '''
@@ -38,3 +35,7 @@ for ips in file:
 
 '''
 if __name__ == "__main__": main()
+
+#The Below Code will say the orgin city and xountry of ips.
+os.system("cat ips.txt | xargs -I% curl http://ipinfo.io/%/city , http://ipinfo.io/%/country >> city.json")
+os.system("cat ips.txt | xargs -I% curl http://ipinfo.io/%/country >> country.json")

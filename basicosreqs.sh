@@ -4,9 +4,9 @@
 
 #The aim of the below lines is to install the all required packages.
 sudo yum install -y epel-release python-devel
-sudo yum -y update
+sudo yum -y update upgrade
 sleep 1
-sudo yum install -y wget elinks httpd vim ntp zip unzip git GeoIP-data
+sudo yum install -y wget elinks vim ntp zip unzip git GeoIP-data httpd
 sleep 1
 
 # The below lines will change Host names and changes the host entries
